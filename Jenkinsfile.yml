@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages {
+        stage('Clone code'){
+            steps {
+                git credentialsId: 'test', url: 'https://github.com/PhamChiXuan1/github_action.git'
+            }
+        }
+        stage('Build code'){
+            steps{
+                
+            }
+        }
+    }
+}
